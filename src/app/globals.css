@@ -3,7 +3,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
-.dark {
+:root {
   --background: oklch(0.9841 0.0026 247.8489);
   --foreground: oklch(0.317 0.0173 248.3715);
   --card: oklch(1 0 0);
@@ -68,7 +68,7 @@
   --letter-spacing: 0em;
 }
 
-:root {
+.dark {
   --background: oklch(0.2552 0.017 248.4942);
   --foreground: oklch(0.9064 0.0053 247.883);
   --card: oklch(0.2961 0.021 248.5405);
