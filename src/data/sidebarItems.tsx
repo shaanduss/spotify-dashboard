@@ -16,7 +16,7 @@ export const insightsGroup: sidebarGroup = {
   items: [
     {
       title: "Home",
-      url: "#",
+      url: "/",
       icon: Home,
     },
     {

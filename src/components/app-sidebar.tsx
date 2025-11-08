@@ -48,8 +48,8 @@ const groups: sidebarGroup[] = [
 ];
 
 const user = {
-  name: "shadcn",
-  email: "m@example.com",
+  name: "Shaan D",
+  email: "shaanduss@gmail.com",
   avatar: "/avatars/shadcn.jpg",
 };
 
