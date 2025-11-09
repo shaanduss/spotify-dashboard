@@ -4,6 +4,12 @@ import "./fonts.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { AppSidebar } from "@/components/sidebar/app-sidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
+import { Geist_Mono } from "next/font/google";
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Spotify Moods",
@@ -20,7 +26,7 @@ export default function RootLayout({
       <head>
         <script src="https://tweakcn.com/live-preview.min.js"></script>
       </head>
-      <body className={`antialiased`}>
+      <body className={`antialiased ${geistMono.variable}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
