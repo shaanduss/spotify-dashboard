@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>
         <script src="https://tweakcn.com/live-preview.min.js"></script>
       </head>
-      <body className={`antialiased font-wix`}>
+      <body className={`antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
