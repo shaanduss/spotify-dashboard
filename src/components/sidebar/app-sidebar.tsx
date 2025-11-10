@@ -1,4 +1,4 @@
-import { NavUser } from "@/components/nav-user";
+import { NavUser } from "@/components/sidebar/nav-user";
 import {
   Sidebar,
   SidebarContent,
@@ -23,11 +23,11 @@ interface SidebarGroupItemProps {
 
 const SidebarGroupItem: React.FC<SidebarGroupItemProps> = ({ group }) => (
   <SidebarGroup>
-    <SidebarGroupLabel>{group.label}</SidebarGroupLabel>
+    <SidebarGroupLabel className="font-bold">{group.label}</SidebarGroupLabel>
     <SidebarGroupContent>
       <SidebarMenu>
         {group.items.map((item) => (
-          <SidebarMenuItem key={item.title}>
+          <SidebarMenuItem key={item.title} className="font-medium">
             <SidebarMenuButton asChild>
               <a href={item.url}>
                 <item.icon />
