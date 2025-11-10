@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { AppSidebar } from "@/components/sidebar/app-sidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { Geist_Mono } from "next/font/google";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -34,6 +35,7 @@ export default function RootLayout({
         >
           <SidebarProvider>
             <AppSidebar />
+            <Toaster richColors />
             <div className={`w-full`}>{children}</div>
           </SidebarProvider>
         </ThemeProvider>
