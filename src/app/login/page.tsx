@@ -34,7 +34,7 @@ export default function CardDemo() {
 
       if (res.ok) {
         toast.success("Logging In...");
-        router.push("/dashboard");
+        router.push("/");
       } else {
         toast.error(data.error || "Login failed");
       }
