@@ -53,8 +53,8 @@ const AnimatedBadge = ({
         style={{ backgroundColor: hexToRgba(color, 0.4) }}
       >
         <motion.div
-          animate={{ opacity: [0, 1, 0] }}
-          transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+          animate={{ opacity: [0, 0.5, 1, 0.5, 0] }}
+          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
           className="absolute top-1/2 left-1/2 flex h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full"
           style={{ backgroundColor: color }}
         />

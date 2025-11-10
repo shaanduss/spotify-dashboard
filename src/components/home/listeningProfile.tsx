@@ -20,7 +20,7 @@ const ValueWithLabel: React.FC<ValueWithLabelProps> = ({ value, label }) => {
 
 export const ListeningProfile: React.FC = () => {
   return (
-    <Card className="w-full ">
+    <Card className="w-full p-6 ring-1 ring-primary/50">
       <CardHeader className="gap-0">
         <div className="flex justify-between items-center">
           <div>
@@ -36,7 +36,7 @@ export const ListeningProfile: React.FC = () => {
         </div>
       </CardHeader>
       <Separator />
-      <CardContent className="flex flex-col gap-y-3">
+      <CardContent className="flex flex-col gap-y-10 mt-2 justify-center item-center h-full">
         <div className="flex justify-center">
           <div className="flex justify-center gap-x-20 max-w-full md:max-w-md w-full px-4">
             <ValueWithLabel value="92" label="tracks" />
@@ -44,7 +44,7 @@ export const ListeningProfile: React.FC = () => {
             <ValueWithLabel value="5" label="top moods" />
           </div>
         </div>
-        <div className="flex gap-x-2 mt-5">
+        <div className="flex gap-x-2 items-center justify-center">
           <AnimatedBadge text="Energetic" color="#FF6F61" />
           <AnimatedBadge text="Calm" color="#4A90E2" />
           <AnimatedBadge text="Melancholy" color="#6E7B8B" />
