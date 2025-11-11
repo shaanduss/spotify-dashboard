@@ -4,7 +4,6 @@ import { MoodPieChart } from "@/components/home/moodPieChart";
 import { Top10Tracks } from "@/components/home/top10Tracks";
 import { Button } from "@/components/ui/button";
 import { userType } from "@/schemas/userSchema";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
