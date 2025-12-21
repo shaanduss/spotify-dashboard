@@ -4,4 +4,7 @@ export type userType = {
   email: string;
   name: string;
   spotifyLink: string;
+  spotifyAccessToken: string;
+  spotifyRefreshToken: string;
+  spotifyTokenExpiresIn: number;
 };
