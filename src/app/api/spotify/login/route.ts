@@ -5,6 +5,8 @@ const clientId = process.env.SPOTIFY_CLIENT_ID!;
 const redirectUri = process.env.SPOTIFY_REDIRECT_URI!;
 const scopes = [
   "user-read-email",
+  // Required for "Top Tracks" endpoints (Spotify returns 403 "Insufficient client scope" without it)
+  "user-top-read",
   "playlist-read-private",
   "playlist-modify-private",
   "playlist-modify-public",

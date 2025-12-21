@@ -34,6 +34,7 @@ export async function GET(request: Request) {
       "base64"
     );
 
+    // Fetch user token from Spotify
     const tokenRes = await fetch("https://accounts.spotify.com/api/token", {
       method: "POST",
       headers: {
