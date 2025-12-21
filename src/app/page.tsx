@@ -57,7 +57,7 @@ export default function Home() {
         <>
           <div className="flex gap-x-8 ">
             <ListeningProfile />
-            <Top10Tracks />
+            {user && <Top10Tracks user={user} />}
           </div>
           <MoodPieChart />
         </>
